@@ -32,7 +32,9 @@ Press the button!
 
 |Deploy|
 
-You will need to create an account if you don't have one already. Have your Consumer key/secret and Access token/secret from above handy.
+You will need to create an account if you don't have one already.
+Have your Consumer key/secret and Access token/secret from above handy.
+You will also need to provide a name and email address to serve as an admin for the app.
 
 After deploying, you will need to follow up with a few commands using
 the `Heroku Toolbelt`_:
