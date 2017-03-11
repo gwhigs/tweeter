@@ -42,6 +42,8 @@ the `Heroku Toolbelt`_:
     heroku run --app YOURAPPNAME python manage.py createsuperuser
     heroku open
 
+Replace YOURAPPNAME above with your app name from Heroku.
+
 .. _Heroku Toolbelt: https://toolbelt.heroku.com/
 
 .. |Deploy| image:: https://www.herokucdn.com/deploy/button.svg
