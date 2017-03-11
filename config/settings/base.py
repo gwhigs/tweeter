@@ -59,6 +59,7 @@ LOCAL_APPS = [
     # custom users app
     'tweeter.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'tweets',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
