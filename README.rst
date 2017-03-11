@@ -17,6 +17,7 @@ Step 1: Obtain Twitter API Keys
 -------------------------------
 * Have an account on `Twitter`_ for your app to tweet on.
 * Obtain access keys to your account from `dev.twitter.com`_
+
     * Consumer keys from https://dev.twitter.com/apps (under "OAuth settings")
     * Access tokens from https://dev.twitter.com/apps (under "Your access token")
 
