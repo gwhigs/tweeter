@@ -12,7 +12,24 @@ A tool for sending preformed tweets out on a timer.
 
 Basic Setup
 ===========
-Deploy to Heroku: |Deploy|
+
+Step 1: Obtain Twitter API Keys
+-------------------------------
+- Create an account on `Twitter`_ for your app to tweet on.
+- Obtain access keys to your account from `dev.twitter.com`_
+    - Consumer keys from https://dev.twitter.com/apps (under "OAuth settings")
+    - Access tokens from https://dev.twitter.com/apps (under "Your access token")
+
+.. _Twitter: https://twitter.com
+
+.. _dev.twitter.com: https://dev.twitter.com/oauth/overview/application-owner-access-tokens
+
+Step 2: Deploy to Heroku
+------------------------
+
+Press the button!
+
+|Deploy|
 
 After deploying, you will need to follow up with a few commands using
 the `Heroku Toolbelt`_:
