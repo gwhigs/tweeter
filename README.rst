@@ -10,6 +10,25 @@ A tool for sending preformed tweets out on a timer.
 
 :License: MIT
 
+Basic Setup
+===========
+Deploy to Heroku: |Deploy|
+
+After deploying, you will need to follow up with a few commands using
+the `Heroku Toolbelt`_:
+
+.. code:: sh
+
+    heroku run --app YOURAPPNAME python manage.py createsuperuser
+    heroku open
+
+.. _Heroku Toolbelt: https://toolbelt.heroku.com/
+
+.. |Deploy| image:: https://www.herokucdn.com/deploy/button.svg
+   :target: https://heroku.com/deploy?template=https://github.com/gwhigs/tweeter/tree/master
+
+Advanced
+========
 
 Settings
 --------
