@@ -1,1 +1,7 @@
 {% extends "base.html" %}
+
+{% block content %}
+    <p>Success! Your Tweeter app is live.</p>
+    <p>Head over to the <a href="{% url 'admin:index' %}">admin interface</a> to add tweets to your queue</p>
+    <p>Make sure you've created your admin credentials via the <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku Toolbelt</a> per the <a href="https://github.com/gwhigs/tweeter#step-2-deploy-to-heroku">instructions</a> in order to log in.</p>
+{% endblock content %}
