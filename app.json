@@ -22,6 +22,8 @@
       "description": "Comma-separated list of hosts",
       "value": ".herokuapp.com"
     },
+    "DJANGO_ADMIN_NAME": "",
+    "DJANGO_ADMIN_EMAIL": "",
     "TWITTER_CONSUMER_KEY": "",
     "TWITTER_CONSUMER_SECRET": "",
     "TWITTER_ACCESS_KEY": "",
