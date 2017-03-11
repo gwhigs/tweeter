@@ -22,11 +22,10 @@
       "description": "Comma-separated list of hosts",
       "value": ".herokuapp.com"
     },
-    "DJANGO_AWS_ACCESS_KEY_ID": "",
-    "DJANGO_AWS_SECRET_ACCESS_KEY": "",
-    "DJANGO_AWS_STORAGE_BUCKET_NAME": "",
-    "DJANGO_MAILGUN_SERVER_NAME": "",
-    "DJANGO_MAILGUN_API_KEY": ""
+    "TWITTER_CONSUMER_KEY": "",
+    "TWITTER_CONSUMER_SECRET": "",
+    "TWITTER_ACCESS_KEY": "",
+    "TWITTER_ACCESS_SECRET": ""
   },
   "scripts": {
     "postdeploy": "python manage.py migrate"

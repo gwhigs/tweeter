@@ -2,7 +2,7 @@
 """
 Production Configurations
 
-- Use Amazon's S3 for storing static files and uploaded media
+- ~~Use Amazon's S3 for storing static files and uploaded media~~ Use Whitenoise for static, ignore media
 - Use mailgun to send emails
 - Use Redis for cache
 
@@ -70,7 +70,7 @@ ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['example.com', ])
 
 INSTALLED_APPS += ['gunicorn', ]
 
-
+'''
 # STORAGE CONFIGURATION
 # ------------------------------------------------------------------------------
 # Uploaded Media Files
@@ -99,7 +99,7 @@ AWS_HEADERS = {
 # URL that handles the media served from MEDIA_ROOT, used for managing
 # stored files.
 MEDIA_URL = 'https://s3.amazonaws.com/%s/' % AWS_STORAGE_BUCKET_NAME
-
+'''
 
 # Static Assets
 # ------------------------
@@ -116,8 +116,8 @@ SERVER_EMAIL = env('DJANGO_SERVER_EMAIL', default=DEFAULT_FROM_EMAIL)
 # Anymail with Mailgun
 INSTALLED_APPS += ['anymail', ]
 ANYMAIL = {
-    'MAILGUN_API_KEY': env('DJANGO_MAILGUN_API_KEY'),
-    'MAILGUN_SENDER_DOMAIN': env('MAILGUN_SENDER_DOMAIN')
+    'MAILGUN_API_KEY': env('MAILGUN_API_KEY'),
+    'MAILGUN_SENDER_DOMAIN': env('MAILGUN_DOMAIN')
 }
 EMAIL_BACKEND = 'anymail.backends.mailgun.MailgunBackend'
 
