@@ -274,3 +274,9 @@ ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+
+# Twitter
+TWITTER_CONSUMER_KEY = env('TWITTER_CONSUMER_KEY')
+TWITTER_CONSUMER_SECRET = env('TWITTER_CONSUMER_SECRET')
+TWITTER_ACCESS_KEY = env('TWITTER_ACCESS_KEY')
+TWITTER_ACCESS_SECRET = env('TWITTER_ACCESS_SECRET')
