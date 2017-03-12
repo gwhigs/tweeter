@@ -14,6 +14,7 @@ urlpatterns = [
 
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, admin.site.urls),
+    url(r'^jet/', include('jet.urls', 'jet')),  # Django JET URLS
 
     # User management
     url(r'^users/', include('tweeter.users.urls', namespace='users')),
