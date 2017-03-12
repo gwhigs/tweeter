@@ -42,6 +42,7 @@ the `Heroku Toolbelt`_:
 .. code:: sh
 
     heroku run --app YOURAPPNAME python manage.py createsuperuser
+    heroku ps:scale --app YOURAPPNAME worker=1
     heroku open
 
 Replace YOURAPPNAME above with your app name from Heroku.

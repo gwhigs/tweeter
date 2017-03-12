@@ -251,7 +251,7 @@ AUTOSLUG_SLUGIFY_FUNCTION = 'slugify.slugify'
 
 ########## CELERY
 INSTALLED_APPS += ['tweeter.taskapp.celery.CeleryConfig']
-BROKER_URL = env('CELERY_BROKER_URL', default='django://')
+BROKER_URL = env('REDIS_URL', default='django://')
 if BROKER_URL == 'django://':
     CELERY_RESULT_BACKEND = 'redis://'
 else:
@@ -270,3 +270,6 @@ TWITTER_CONSUMER_KEY = env('TWITTER_CONSUMER_KEY')
 TWITTER_CONSUMER_SECRET = env('TWITTER_CONSUMER_SECRET')
 TWITTER_ACCESS_KEY = env('TWITTER_ACCESS_KEY')
 TWITTER_ACCESS_SECRET = env('TWITTER_ACCESS_SECRET')
+
+# Custom App Settings
+TWEET_INTERVAL_MINUTES = env.int('TWEET_INTERVAL_MINUTES', default=60)
