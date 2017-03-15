@@ -42,10 +42,26 @@ the `Heroku Toolbelt`_:
 .. code:: sh
 
     heroku run --app YOURAPPNAME python manage.py createsuperuser
-    heroku ps:scale --app YOURAPPNAME worker=1
-    heroku open --app YOURAPPNAME
+    heroku heroku --app YOURAPPNAME addons:open scheduler
 
 Replace YOURAPPNAME above with your app name from Heroku.
+
+This will open a page titled *Schedule recurring tasks for your app*.
+Click *Add new job* and paste the following in next to the ``$`` symbol:
+
+.. code:: sh
+
+    python manage.py tweet_next
+
+You will also choose the frequency of posting here (Daily, Hourly, or every 10 minutes).
+If you need more granularity over the posting interval, see the advanced instructions below.
+
+You are now ready to open your app and start adding tweets.
+You can access your app at ``yourappname.herokuapp.com`` or by running this command back in the prompt from earlier:
+
+.. code:: sh
+
+    heroku open --app YOURAPPNAME
 
 .. _Heroku Toolbelt: https://toolbelt.heroku.com/
 
