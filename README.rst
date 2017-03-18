@@ -42,7 +42,7 @@ the `Heroku Toolbelt`_:
 .. code:: sh
 
     heroku run --app YOURAPPNAME python manage.py createsuperuser
-    heroku heroku --app YOURAPPNAME addons:open scheduler
+    heroku addons:open scheduler --app YOURAPPNAME
 
 Replace YOURAPPNAME above with your app name from Heroku.
 
