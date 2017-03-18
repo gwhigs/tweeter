@@ -22,7 +22,6 @@
       "description": "Comma-separated list of hosts",
       "value": ".herokuapp.com"
     },
-    "TWEET_INTERVAL_MINUTES": "60",
     "DJANGO_ADMIN_NAME": "",
     "DJANGO_ADMIN_EMAIL": "",
     "TWITTER_CONSUMER_KEY": "",
